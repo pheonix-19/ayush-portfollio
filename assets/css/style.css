@@ -155,7 +155,21 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+/* body { background: var(--smoky-black); } */
+/* body { background: var(--smoky-black); } */
+body {
+  background-image: url('../images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: moveBackground 50s linear infinite;
+  height: auto;
+  margin: 0;
+}
+@keyframes moveBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
 
 
 
